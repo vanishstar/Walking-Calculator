@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -10,112 +9,111 @@
 * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
 
 body {
-font-family: -apple-system, system-ui, sans-serif;
-background: #f5f2ee;
-color: #1a1614;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
-padding: 24px 16px;
-padding-top: calc(24px + env(safe-area-inset-top));
+  font-family: -apple-system, system-ui, sans-serif;
+  background: #f5f2ee;
+  color: #1a1614;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  padding-top: calc(24px + env(safe-area-inset-top));
 }
 
 .container { width: 100%; max-width: 400px; }
 
 .header { margin-bottom: 20px; }
 .header-sub {
-font-size: 11px; font-weight: 700; letter-spacing: 2px;
-color: #c8b89a; text-transform: uppercase; margin-bottom: 4px;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  color: #c8b89a; text-transform: uppercase; margin-bottom: 4px;
 }
 .header-title {
-font-size: 28px; font-weight: 800; color: #2c2420; letter-spacing: -0.5px;
+  font-size: 28px; font-weight: 800; color: #2c2420; letter-spacing: -0.5px;
 }
 
 .card {
-background: #ffffff; border-radius: 16px;
-padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.07);
-margin-bottom: 12px;
+  background: #ffffff; border-radius: 16px;
+  padding: 24px; box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+  margin-bottom: 12px;
 }
 
 .field-label {
-font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
-color: #6b5d57; text-transform: uppercase;
-display: block; margin-bottom: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
+  color: #6b5d57; text-transform: uppercase;
+  display: block; margin-bottom: 8px;
 }
 
 .input-wrap {
-border: 1.5px solid #d4c8be; border-radius: 10px;
-background: #ffffff; height: 50px;
-display: flex; align-items: center; padding: 0 14px;
-margin-bottom: 20px;
--webkit-border-radius: 10px;
+  border: 1.5px solid #d4c8be; border-radius: 10px;
+  background: #ffffff; height: 50px;
+  display: flex; align-items: center; padding: 0 14px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 10px;
 }
 .input-wrap input {
-border: none !important; outline: none !important;
-background: transparent !important;
-font-size: 16px; color: #1a1614; width: 100%;
-font-family: -apple-system, system-ui, sans-serif;
--webkit-appearance: none;
-box-shadow: none !important;
--webkit-box-shadow: none !important;
+  border: none !important; outline: none !important;
+  background: transparent !important;
+  font-size: 16px; color: #1a1614; width: 100%;
+  font-family: -apple-system, system-ui, sans-serif;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
 }
 .input-wrap input::placeholder { color: #b0a099; }
 .input-wrap input::-webkit-inner-spin-button,
 .input-wrap input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
-.input-wrap input[type=“number”] { -moz-appearance: textfield; }
+.input-wrap input[type="number"] { -moz-appearance: textfield; }
 
 .intensity-group { display: flex; flex-direction: column; gap: 8px; }
 .intensity-btn {
-padding: 14px 16px;
-border: 1.5px solid #d4c8be;
-border-radius: 10px;
-background: #ffffff;
-color: #3d3330;
-cursor: pointer;
-text-align: left;
-font-family: -apple-system, system-ui, sans-serif;
-display: flex;
-justify-content: space-between;
-align-items: center;
--webkit-appearance: none;
-width: 100%;
--webkit-border-radius: 10px;
+  padding: 14px 16px;
+  border: 1.5px solid #d4c8be;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #3d3330;
+  cursor: pointer;
+  text-align: left;
+  font-family: -apple-system, system-ui, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-appearance: none;
+  width: 100%;
+  -webkit-border-radius: 10px;
 }
 .intensity-btn.active {
-background: #2c2420;
-border-color: #2c2420;
-color: #ffffff;
+  background: #2c2420;
+  border-color: #2c2420;
+  color: #ffffff;
 }
 .btn-label { font-weight: 700; font-size: 15px; }
 .btn-desc { font-size: 13px; color: #6b5d57; }
 .intensity-btn.active .btn-desc { color: #c8b89a; }
 
 .result-card {
-background: #2c2420; border-radius: 16px;
-padding: 24px; text-align: center;
-box-shadow: 0 1px 6px rgba(0,0,0,0.12);
-margin-bottom: 12px;
-display: none;
--webkit-border-radius: 16px;
+  background: #2c2420; border-radius: 16px;
+  padding: 24px; text-align: center;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+  margin-bottom: 12px;
+  display: none;
+  -webkit-border-radius: 16px;
 }
 .result-card.visible { display: block; }
 .result-sub {
-font-size: 11px; font-weight: 700; letter-spacing: 2px;
-color: #c8b89a; text-transform: uppercase; margin-bottom: 8px;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px;
+  color: #c8b89a; text-transform: uppercase; margin-bottom: 8px;
 }
 .result-number {
-font-size: 72px; font-weight: 800; color: #ffffff;
-line-height: 1; letter-spacing: -3px; margin-bottom: 8px;
+  font-size: 72px; font-weight: 800; color: #ffffff;
+  line-height: 1; letter-spacing: -3px; margin-bottom: 8px;
 }
 .result-context { font-size: 14px; color: #c8b89a; font-weight: 500; }
 
 .fine-print {
-font-size: 12px; color: #9b8e88;
-text-align: center; line-height: 1.5;
+  font-size: 12px; color: #9b8e88;
+  text-align: center; line-height: 1.5;
 }
 </style>
-
 </head>
 <body>
 <div class="container">
@@ -131,29 +129,26 @@ text-align: center; line-height: 1.5;
       <input type="number" id="weightInput" placeholder="e.g. 165">
     </div>
 
-```
-<label class="field-label" for="minutesInput">Duration (minutes)</label>
-<div class="input-wrap">
-  <input type="number" id="minutesInput" placeholder="e.g. 30">
-</div>
+    <label class="field-label" for="minutesInput">Duration (minutes)</label>
+    <div class="input-wrap">
+      <input type="number" id="minutesInput" placeholder="e.g. 30">
+    </div>
 
-<label class="field-label">Intensity</label>
-<div class="intensity-group">
-  <button class="intensity-btn" id="btn_light">
-    <span class="btn-label">Easy</span>
-    <span class="btn-desc">Leisurely pace, ~2.5 mph</span>
-  </button>
-  <button class="intensity-btn active" id="btn_moderate">
-    <span class="btn-label">Moderate</span>
-    <span class="btn-desc">Walking pad / comfortable, ~3 mph</span>
-  </button>
-  <button class="intensity-btn" id="btn_brisk">
-    <span class="btn-label">Brisk</span>
-    <span class="btn-desc">Purposeful pace, ~3.5 mph</span>
-  </button>
-</div>
-```
-
+    <label class="field-label">Intensity</label>
+    <div class="intensity-group">
+      <button class="intensity-btn" id="btn_light">
+        <span class="btn-label">Easy</span>
+        <span class="btn-desc">Leisurely pace, ~2.5 mph</span>
+      </button>
+      <button class="intensity-btn active" id="btn_moderate">
+        <span class="btn-label">Moderate</span>
+        <span class="btn-desc">Walking pad / comfortable, ~3 mph</span>
+      </button>
+      <button class="intensity-btn" id="btn_brisk">
+        <span class="btn-label">Brisk</span>
+        <span class="btn-desc">Purposeful pace, ~3.5 mph</span>
+      </button>
+    </div>
   </div>
 
   <div class="result-card" id="resultCard">
@@ -177,62 +172,61 @@ var METS = {
 
 // Hardcoded biometrics
 var AGE = 30;
-var HEIGHT_CM = 162.56; // 5’4”
+var HEIGHT_CM = 162.56; // 5'4"
 var SEX_OFFSET = -161;  // Mifflin-St Jeor female offset
 
-var intensity = “moderate”;
+var intensity = "moderate";
 
 function setIntensity(val) {
-intensity = val;
-var keys = [“light”, “moderate”, “brisk”];
-for (var i = 0; i < keys.length; i++) {
-var el = document.getElementById(“btn_” + keys[i]);
-el.className = “intensity-btn” + (keys[i] === val ? “ active” : “”);
-}
-calc();
+  intensity = val;
+  var keys = ["light", "moderate", "brisk"];
+  for (var i = 0; i < keys.length; i++) {
+    var el = document.getElementById("btn_" + keys[i]);
+    el.className = "intensity-btn" + (keys[i] === val ? " active" : "");
+  }
+  calc();
 }
 
 function calc() {
-var weight = parseFloat(document.getElementById(“weightInput”).value);
-var minutes = parseFloat(document.getElementById(“minutesInput”).value);
-var card = document.getElementById(“resultCard”);
+  var weight = parseFloat(document.getElementById("weightInput").value);
+  var minutes = parseFloat(document.getElementById("minutesInput").value);
+  var card = document.getElementById("resultCard");
 
-if (isNaN(weight) || isNaN(minutes) || weight <= 0 || minutes <= 0) {
-card.className = “result-card”;
-return;
-}
+  if (isNaN(weight) || isNaN(minutes) || weight <= 0 || minutes <= 0) {
+    card.className = "result-card";
+    return;
+  }
 
-var kg = weight * 0.453592;
+  var kg = weight * 0.453592;
 
-// Mifflin-St Jeor RMR (kcal/day)
-var rmr = (10 * kg) + (6.25 * HEIGHT_CM) - (5 * AGE) + SEX_OFFSET;
+  // Mifflin-St Jeor RMR (kcal/day)
+  var rmr = (10 * kg) + (6.25 * HEIGHT_CM) - (5 * AGE) + SEX_OFFSET;
 
-// Resting burn per minute
-var restPerMin = rmr / 1440;
+  // Resting burn per minute
+  var restPerMin = rmr / 1440;
 
-// Gross burn for the activity
-var met = METS[intensity].met;
-var grossPerMin = met * restPerMin;
+  // Gross burn for the activity
+  var met = METS[intensity].met;
+  var grossPerMin = met * restPerMin;
 
-// Net burn = gross activity burn minus what you’d burn at rest
-var netCalories = Math.round((grossPerMin - restPerMin) * minutes);
+  // Net burn = gross activity burn minus what you'd burn at rest
+  var netCalories = Math.round((grossPerMin - restPerMin) * minutes);
 
-var pct = Math.round((netCalories / 1200) * 100);
+  var pct = Math.round((netCalories / 1200) * 100);
 
-document.getElementById(“resultNum”).textContent = netCalories;
-document.getElementById(“resultContext”).textContent =
-pct + “% of a 1,200 cal day \u00b7 “ + Math.round(minutes) + “ min “ + METS[intensity].label;
+  document.getElementById("resultNum").textContent = netCalories;
+  document.getElementById("resultContext").textContent =
+    pct + "% of a 1,200 cal day \u00b7 " + Math.round(minutes) + " min " + METS[intensity].label;
 
-card.className = “result-card visible”;
+  card.className = "result-card visible";
 }
 
 // Wire up buttons and inputs
-document.getElementById(“btn_light”).addEventListener(“click”, function() { setIntensity(“light”); });
-document.getElementById(“btn_moderate”).addEventListener(“click”, function() { setIntensity(“moderate”); });
-document.getElementById(“btn_brisk”).addEventListener(“click”, function() { setIntensity(“brisk”); });
-document.getElementById(“weightInput”).addEventListener(“input”, calc);
-document.getElementById(“minutesInput”).addEventListener(“input”, calc);
+document.getElementById("btn_light").addEventListener("click", function() { setIntensity("light"); });
+document.getElementById("btn_moderate").addEventListener("click", function() { setIntensity("moderate"); });
+document.getElementById("btn_brisk").addEventListener("click", function() { setIntensity("brisk"); });
+document.getElementById("weightInput").addEventListener("input", calc);
+document.getElementById("minutesInput").addEventListener("input", calc);
 </script>
-
 </body>
 </html>
